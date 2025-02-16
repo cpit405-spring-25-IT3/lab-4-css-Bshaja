@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4</title>
+    <title>BaderShaja_lab4</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <h1 id="text">Great Auto Parts - Order Form</h1>
+    <div id="content">
+        <form id="form">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="Enter your first name">
+            
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" placeholder="Enter your last name">
+            
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email">
+            
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+            
+            <label for="make">Make: </label>
+            <select id="make">
+                <option value="MAYBACH">MAYBACH</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>
 
+
+            <label for="model">Model: </label>
+            <select id="model">
+                <option value="CAMRY">CAMRY</option>
+                <option value="COROLLA">COROLLA</option>
+                <option value="E-Class">E-Class</option>
+                <option value="G-Class">G-Class</option>
+            </select>
+
+            <label for="year">Year: </label>
+            <input type="number" id="year"  min="1980" max="2025">
+            
+            <label for="date">Date: </label>
+            <input type="date" id="date" >
+            
+            <label for="part">Spare Part: </label>
+            <input type="text" id="part" >
+            
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" min="1" max="20">
+            
+            <label for="comment">Comment: </label>
+            <textarea id="comment" name="comment" cols="20" rows="5"></textarea> 
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </div>
 </body>
-
 </html>
